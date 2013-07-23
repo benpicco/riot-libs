@@ -4,6 +4,9 @@ endif
 ifneq (,$(findstring regex,$(USEMODULE)))
 	DIRS += regex
 endif
+ifneq (,$(findstring compat_misc,$(USEMODULE)))
+	DIRS += compat_misc
+endif
 
 all:
 	mkdir -p $(BINDIR)

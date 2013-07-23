@@ -1,4 +1,4 @@
-Libraries that are not general purpose enough to be included into the RIOT source tree, but still come in handy as a module.
+Libraries that are not general purpose/polished enough to be included into the RIOT source tree, but still come in handy as a module.
 
 Usage:
 
