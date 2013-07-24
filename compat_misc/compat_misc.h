@@ -3,8 +3,8 @@
  * TODO: move those functions and defines to their appropriate place in RIOT
  */
 
-#ifndef __COMPAT_MISC_H__
-#define __COMPAT_MISC_H__
+#ifndef COMPAT_MISC_H_
+#define COMPAT_MISC_H_
 
 // since we only support v6…
 #define sockaddr_in		socka6
@@ -30,8 +30,5 @@ extern int getpagesize(void);
 // dummy implementation, we don't have interface names
 extern char* if_indextoname(unsigned int ifindex, char *ifname);
 extern unsigned int if_nametoindex(const char *ifname);
-
-void *my_calloc(size_t nmemb, size_t size);
-void *my_realloc(void *ptr, size_t size);
 
 #endif

@@ -7,6 +7,9 @@ endif
 ifneq (,$(findstring compat_misc,$(USEMODULE)))
 	DIRS += compat_misc
 endif
+ifneq (,$(findstring print_malloc,$(USEMODULE)))
+	DIRS += print_malloc
+endif
 
 all:
 	mkdir -p $(BINDIR)
