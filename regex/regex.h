@@ -42,7 +42,7 @@
 #include <sys/cdefs.h>
 #include <sys/types.h>
 
-#if !defined(WIN32) && !defined(ANDROID)
+#if !defined(WIN32) && !defined(ANDROID) && !defined(RIOT)
 #include <regex.h>
 #else
 /* types */
